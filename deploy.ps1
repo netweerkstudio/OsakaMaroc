@@ -1,9 +1,10 @@
-param (
-    [string]$commitMessage = "auto-update"
-)
-
 Write-Host "🚀 Adding changes..." -ForegroundColor Cyan
 git add .
+
+$commitMessage = Read-Host "📝 Enter your commit message (or press Enter for 'auto-update')"
+if ([string]::IsNullOrWhiteSpace($commitMessage)) {
+    $commitMessage = "auto-update"
+}
 
 Write-Host "💾 Committing changes with message: '$commitMessage'..." -ForegroundColor Cyan
 git commit -m $commitMessage

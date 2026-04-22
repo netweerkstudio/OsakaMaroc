@@ -45,3 +45,14 @@ Logo:
     - Instrumentation et Process Industriels
     - Fournitures et Outillages pour tous les types d’activités
     - Equipements de Protection Individuelle
+[x] turn hero section to a component
+[x] create products section with title and subtile in gray color and also 6 cards with images (109 height) and titles for each product under the image
+[x] update products cards to use images from /images/products folder and titles as following:
+    - Pneumatique
+    - Hydraulique			
+    - Automatisme
+    - Transmission
+    - Pompes
+    - Instrumentation et Process
+    - Fournitures et Outillages
+    - Equipements de Protection Individuelle (EPI)

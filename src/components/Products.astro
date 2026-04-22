@@ -1,0 +1,134 @@
+---
+const products = [
+  {
+    title: "Pneumatique",
+    image: "/images/products/Pneumatique.jpg"
+  },
+  {
+    title: "Hydraulique",
+    image: "/images/products/hydraulique.webp"
+  },
+  {
+    title: "Automatisme",
+    image: "/images/products/Automatisation-industrielle.jpg"
+  },
+  {
+    title: "Transmission",
+    image: "/images/products/Transmission.png"
+  },
+  {
+    title: "Pompes",
+    image: "/images/products/Pompes.webp"
+  },
+  {
+    title: "Instrumentation et Process",
+    image: "/images/products/Instrumentation%20et%20Process.jpg"
+  },
+  {
+    title: "Fournitures et Outillages",
+    image: "/images/products/Fournitures%20et%20Outillages.jpg"
+  },
+  {
+    title: "Equipements de Protection Individuelle (EPI)",
+    image: "/images/products/Equipement%20Protection%20Individuelle%20(EPI).jpg"
+  }
+];
+---
+
+<section class="products-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Nos Produits</h2>
+      <p class="section-subtitle">Découvrez notre large gamme de produits industriels de haute qualité adaptées à tous vos besoins.</p>
+    </div>
+
+    <div class="products-grid">
+      {products.map(product => (
+        <a href="#" class="product-card">
+          <div class="image-wrapper">
+            <img src={product.image} alt={product.title} />
+          </div>
+          <h3 class="product-title">{product.title}</h3>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .products-section {
+    padding: 5rem 0;
+    background: #ffffff;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    color: #555555; /* Gray title */
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+
+  .section-subtitle {
+    font-size: 1.1rem;
+    color: #888888; /* Gray subtitle */
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .product-card {
+    background: #fdfdfd;
+    border: 1px solid rgba(0,0,0,0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+  }
+
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+    border-color: #009FE3;
+  }
+
+  .image-wrapper {
+    width: 100%;
+    height: 109px; /* Fixed height requested */
+    overflow: hidden;
+    background: #f4f4f4;
+  }
+
+  .image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  .product-card:hover .image-wrapper img {
+    transform: scale(1.05);
+  }
+
+  .product-title {
+    padding: 1.25rem 1rem;
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .product-card:hover .product-title {
+    color: #009FE3;
+  }
+</style>
