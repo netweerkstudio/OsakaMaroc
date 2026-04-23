@@ -73,4 +73,23 @@ Logo:
     Chaque projet est traité avec précision, exigence et discrétion.
     ```
 [x] add Voir Plus button under about section
-
+[x] add Secteurs section with cards 200px/200px and icons with title under each icon and 5 cards per row and titles as following: 
+    - Alimentation			
+    - Automobile			
+    - Biotechnologie		
+    - Produits de beauté
+    - Electrique			
+    - Pharmaceutique		
+    - logistique			
+    - Naval
+    - Conditionnement		
+    - Chimique		
+    - Energie Renouvelables	
+    - Industrie Sidérurgique
+[x] add image background to sectors section from /images/sectors.jpg
+[x] remove background color to the section
+[x] add white bg to cards with bg shadow
+[x] add image background to sectors section from /images/sectors.jpg
+[x] add title 'Secteurs D’activités' in this section 
+[x] update color of title of sectors to 
+[x] update the icon of Alimentation to something else

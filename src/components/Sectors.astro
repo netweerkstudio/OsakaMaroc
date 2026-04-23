@@ -1,0 +1,189 @@
+---
+const secteurs = [
+  {
+    title: "Alimentation",
+    icon: `<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20M2 12a10 10 0 0 0 20 0"/><path d="M12 2v2"/><path d="M12 8v2"/><path d="M8 6l1 2"/><path d="M16 6l-1 2"/></svg>`,
+  },
+  {
+    title: "Automobile",
+    icon: `<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>`,
+  },
+  {
+    title: "Biotechnologie",
+    icon: `<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18h8"/><path d="M3 22h18"/><path d="M14 22a7 7 0 1 0 0-14h-1"/><path d="M9 14h2"/><path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z"/><path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3"/></svg>`,
+  },
+  {
+    title: "Produits de beauté",
+    icon: `<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3l1.9 5.8 1.9-5.8a2 2 0 0 1 1.3-1.3l5.8-1.9-5.8-1.9a2 2 0 0 1-1.3-1.3z"/><path d="M16 3l-.6 1.8a2 2 0 0 1-1.2 1.2L12.4 6l1.8.6a2 2 0 0 1 1.2 1.2l.6 1.8.6-1.8a2 2 0 0 1 1.2-1.2l1.8-.6-1.8-.6a2 2 0 0 1-1.2-1.2z"/></svg>`,
+  },
+  {
+    title: "Electrique",
+    icon: `<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>`,
+  },
+  {
+    title: "Pharmaceutique",
+    icon: `<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"/><path d="m8.5 8.5 7 7"/></svg>`,
+  },
+  {
+    title: "Logistique",
+    icon: `<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg>`,
+  },
+  {
+    title: "Naval",
+    icon: `<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V8"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/><circle cx="12" cy="5" r="3"/></svg>`,
+  },
+  {
+    title: "Conditionnement",
+    icon: `<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="5" x="2" y="3" rx="1"/><path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8"/><path d="M10 12h4"/></svg>`,
+  },
+  {
+    title: "Chimique",
+    icon: `<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v2"/><path d="M15 2v2"/><path d="M12 2v6"/><path d="M10.1 8l-5.6 11c-.5 1 .2 2.2 1.4 2.2h12.2c1.2 0 1.9-1.2 1.4-2.2l-5.6-11"/><path d="M6 16h12"/></svg>`,
+  },
+  {
+    title: "Energie Renouvelables",
+    icon: `<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>`,
+  },
+  {
+    title: "Industrie Sidérurgique",
+    icon: `<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1"/><path d="M12 18h1"/><path d="M7 18h1"/></svg>`,
+  },
+];
+---
+
+<section class="secteurs-section" id="secteurs">
+  <div class="secteurs-overlay"></div> 
+  <div class="container content-container"> 
+    <div class="section-header">
+      <h2 class="section-title">Secteurs D'Activités</h2>
+    </div>
+
+    <div class="secteurs-grid">
+      {
+        secteurs.map((secteur) => (
+          <div class="secteur-card">
+            <div class="icon-container" set:html={secteur.icon} />
+            <h3 class="secteur-title">{secteur.title}</h3>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .secteurs-section {
+    position: relative;
+    padding: 6rem 0;
+    background-image: url('/images/sectors.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  .secteurs-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .content-container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    color: #555555;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+
+  .section-subtitle {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .secteurs-grid {
+    display: grid;
+    /* 5 cards per row natively */
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+    justify-content: center;
+  } 
+
+  .secteur-card {
+    width: 100%;
+    height: 200px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+    transition: all 0.3s ease;
+    cursor: default;
+  }
+
+  .secteur-card:hover {
+    transform: translateY(-5px);
+    border-color: #009fe3;
+    box-shadow: 0 10px 30px rgba(0, 159, 227, 0.15);
+  }
+
+  .icon-container {
+    color: #009fe3;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+  }
+
+  .secteur-card:hover .icon-container {
+    color: #007bb8;
+  }
+
+  .secteur-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333333;
+    line-height: 1.4;
+  }
+
+  /* Responsive breakpoints to keep nice sizing */
+  @media (max-width: 1200px) {
+    .secteurs-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  @media (max-width: 992px) {
+    .secteurs-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .secteurs-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .secteurs-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+</style>
