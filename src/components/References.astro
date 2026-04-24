@@ -1,0 +1,112 @@
+---
+const clients = [
+  { src: "/images/clients/ALMUMINUM%20DU%20MAROC%20logo.png", alt: "Aluminum du Maroc" },
+  { src: "/images/clients/CUMAREX%20logo.png", alt: "Cumarex" },
+  { src: "/images/clients/Logo-NGE.svg.png", alt: "NGE" },
+  { src: "/images/clients/Marsamaroc-logo.png", alt: "Marsa Maroc" },
+  { src: "/images/clients/PURFLUX%20LOGO.png", alt: "Purflux" },
+  { src: "/images/clients/coficab_logo.jpg", alt: "Coficab" },
+  { src: "/images/clients/plaza%20de%20toros.jpg", alt: "Plaza de Toros" },
+  { src: "/images/clients/trox_logo.jpg", alt: "Trox" },
+];
+---
+
+<section class="references-section" id="references">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Nos Références</h2>
+      <p class="section-subtitle">Ils nous font confiance — des partenaires industriels de premier plan.</p>
+    </div>
+  </div>
+
+  <div class="scroller" data-animated="true">
+    <ul class="scroller-inner">
+      {clients.map(client => (
+        <li>
+          <img src={client.src} alt={client.alt} loading="lazy" />
+        </li>
+      ))}
+      {/* Duplicate for seamless loop */}
+      {clients.map(client => (
+        <li aria-hidden="true">
+          <img src={client.src} alt={client.alt} loading="lazy" />
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<style>
+  .references-section {
+    padding: 5rem 0;
+    background: #ffffff;
+    overflow: hidden;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    color: #555555;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+
+  .section-subtitle {
+    font-size: 1.1rem;
+    color: #888888;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .scroller {
+    max-width: 100vw;
+    overflow: hidden;
+  }
+
+  .scroller-inner {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5rem;
+    width: max-content;
+    padding-block: 1rem;
+    padding-inline: 2.5rem;
+    margin: 0;
+    list-style: none;
+    animation: scroll-clients 30s linear infinite;
+  }
+
+  .scroller-inner li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 160px;
+  }
+
+  .scroller-inner img {
+    height: 70px;
+    max-width: 200px;
+    object-fit: contain;
+    /* filter: grayscale(100%); */
+    /* opacity: 0.6; */
+    transition: filter 0.3s ease, opacity 0.3s ease;
+  }
+
+  .scroller-inner li:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+  }
+
+  @keyframes scroll-clients {
+    to {
+      transform: translateX(calc(-50% - 2.5rem));
+    }
+  }
+
+  .scroller:hover .scroller-inner {
+    animation-play-state: paused;
+  }
+</style>

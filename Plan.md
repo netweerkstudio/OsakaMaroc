@@ -93,3 +93,18 @@ Logo:
 [x] add title 'Secteurs D’activités' in this section 
 [x] update color of title of sectors to 
 [x] update the icon of Alimentation to something else
+[x] create Nos Références section with scrolling logos of clients in images/clients
+[x]  create contact section with subtitle 'Notre équipe est disponible pour vous aider dans toute vos demandes et répondre à vos besoins en question des matériels industrielles.' and title 'Contactez-nous'
+[x] add google maps card in right side and the following contact information in left side:
+    `Tel Fix : 0539943768
+    Tel Fix 2 : 0539325464
+    WhatsApp : 07 76 60 67 06
+    Adresse : N°04, LOT, RUE OUED MHARHAR, Tanger
+    E-mail : contact@osakamaroc.ma
+    commercial@osakamaroc.ma
+    `
+[x] use the following address as pin in the map: Osaka Solutions maroc
+[x] update the footer to use site logo and also with links of site and address provided before and also social media icons
+[x] update background color of footer to white color and so the content to gray color and titles in primary color 
+[x] make logo smaller in footer
+[x] add space around social media icons and make their color to #555
