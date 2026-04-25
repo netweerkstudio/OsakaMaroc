@@ -108,3 +108,10 @@ Logo:
 [x] update background color of footer to white color and so the content to gray color and titles in primary color 
 [x] make logo smaller in footer
 [x] add space around social media icons and make their color to #555
+[x] create Notre Société page
+[x] add layout to notre societe page
+[x] use the content in AboutOsaka.md file to fill the page of Notre societe and don't change a word
+[x] make slugs in french language
+[x] remove emojis and use svg instead
+[x] add sectors component and refrences in notre societe page
+[x] add contact us component to notre societe page
