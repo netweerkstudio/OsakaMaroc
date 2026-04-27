@@ -124,3 +124,4 @@ Logo:
     - https://www.facebook.com/osakasolutionsmaroc
 [x] create standard privacy policy page in french
 [x] create standard terms of use page in french
+[x] use favicon i added to public folder
