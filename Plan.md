@@ -115,3 +115,5 @@ Logo:
 [x] remove emojis and use svg instead
 [x] add sectors component and refrences in notre societe page
 [x] add contact us component to notre societe page
+[x] update brands in homepage to use the new logos max 25 logos in scroll
+[x] create nos marques page with all logos in brands folder, and subtitle with 'Plus de 15 ans d’expérience dans la distribution des Fournitures et matérielles des Marques de premier plan pour l’industrie.'

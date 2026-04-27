@@ -1,0 +1,245 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const allBrands = [
+  "/images/brands/3M-Logo.png",
+  "/images/brands/ABB_logo.png",
+  "/images/brands/Beckhoff_Logo.png",
+  "/images/brands/Bonfiglioli logo.png",
+  "/images/brands/Ceys_logo.webp",
+  "/images/brands/Crouzet_Logo.webp",
+  "/images/brands/Datalogic_Logo.png",
+  "/images/brands/EAO-Logo.png",
+  "/images/brands/Eaton_Corporation_logo.png",
+  "/images/brands/FANUC-logo.webp",
+  "/images/brands/Festo_logo.png",
+  "/images/brands/Garlock_logo.png",
+  "/images/brands/Gewiss-logo.png",
+  "/images/brands/Grundfos-logo.png",
+  "/images/brands/Hager-logo.png",
+  "/images/brands/Harting-Logo.png",
+  "/images/brands/Hiwin-Logo.png",
+  "/images/brands/KOYO LOGO.png",
+  "/images/brands/Keyence logo.png",
+  "/images/brands/Lapp_Logo.png",
+  "/images/brands/Lenze logo.png",
+  "/images/brands/Loctite-Logo.png",
+  "/images/brands/Logo-Sylvania.png",
+  "/images/brands/Logo_Bihl+Wiedemann.png",
+  "/images/brands/Logo_Carlo_Gavazzi.png",
+  "/images/brands/Logo_Legrand.png",
+  "/images/brands/Logo_SMC_Corporation.png",
+  "/images/brands/Logo_Theben.png",
+  "/images/brands/MEANWELL LOGO.webp",
+  "/images/brands/Metal Work LOGO.webp",
+  "/images/brands/Misumi_Logo.jpg",
+  "/images/brands/Murrelektronik logo.png",
+  "/images/brands/NORELEM-LOGO.jpg",
+  "/images/brands/Nidec_company_logo.png",
+  "/images/brands/OMRON_Logo.png",
+  "/images/brands/Philips_logo.png",
+  "/images/brands/Phoenix_Contact_Logo.png",
+  "/images/brands/Rittal-Logo.png",
+  "/images/brands/Rockwell_Automation_Logo.png",
+  "/images/brands/Schneider_Electric_logo.png",
+  "/images/brands/Shell-Logo.jpg",
+  "/images/brands/Sick-Logo.png",
+  "/images/brands/Siemens-Logo.png",
+  "/images/brands/THK_Logo.png",
+  "/images/brands/TS LOGO.jpeg",
+  "/images/brands/WEIDMULLER LOGO.png",
+  "/images/brands/WON LOGO 1.webp",
+  "/images/brands/Wenglor logo.png",
+  "/images/brands/Wilkerson logo.webp",
+  "/images/brands/airtac-vector-logo.png",
+  "/images/brands/asco-numatics-logo.jpg",
+  "/images/brands/aventics-logo.png",
+  "/images/brands/circutor-logo.png",
+  "/images/brands/cst.jpg",
+  "/images/brands/ferraz-shawmut.svg",
+  "/images/brands/fluke-process-instruments-logo.png",
+  "/images/brands/fuji-electric-logo.png",
+  "/images/brands/fyh-logo.png",
+  "/images/brands/gaestopas-logo.png",
+  "/images/brands/gave-logo.png",
+  "/images/brands/iluminia_led logo.jpg",
+  "/images/brands/logo cst.png",
+  "/images/brands/logo iberflex.png",
+  "/images/brands/logo jomiba.jpg",
+  "/images/brands/logo techtop.png",
+  "/images/brands/logo-3l-group.png",
+  "/images/brands/logo-iberflex.svg",
+  "/images/brands/logo-simon.png",
+  "/images/brands/logo_yaskawa.webp",
+  "/images/brands/murrplastik-logo.png",
+  "/images/brands/omc-logo.png",
+  "/images/brands/pilz-logo.png",
+  "/images/brands/schaeffler-hd-logo.png",
+  "/images/brands/schmersal_logo.png",
+  "/images/brands/timken-hd-logo.png",
+  "/images/brands/vipa-controls-america-vector-logo.png",
+];
+---
+
+<Layout
+  title="Nos Marques | Osaka Solutions Maroc"
+  description="Découvrez toutes les marques de premier plan distribuées par Osaka Solutions Maroc. Plus de 15 ans d'expérience dans la distribution des fournitures et matériels industriels."
+>
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1>Nos Marques</h1>
+      <p class="breadcrumb"><a href="/">Accueil</a> <span>/</span> Nos Marques</p>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="brands-intro">
+    <div class="container">
+      <div class="intro-inner">
+        <p class="subtitle">
+          Plus de 15 ans d'expérience dans la distribution des Fournitures et matérielles des Marques de premier plan pour l'industrie.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- All Brands Grid -->
+  <section class="brands-grid-section">
+    <div class="container">
+      <ul class="brands-grid">
+        {allBrands.map((src) => (
+          <li class="brand-card">
+            <img src={src} alt="Brand Logo" loading="lazy" />
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  /* Hero */
+  .page-hero {
+    position: relative;
+    height: 280px;
+    background: url('/images/AboutOsaka.webp') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 10, 12, 0.65);
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+  }
+
+  .breadcrumb {
+    color: rgba(255,255,255,0.7);
+    font-size: 0.95rem;
+  }
+
+  .breadcrumb a {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .breadcrumb a:hover {
+    color: #009FE3;
+  }
+
+  .breadcrumb span {
+    margin: 0 0.5rem;
+  }
+
+  /* Intro */
+  .brands-intro {
+    padding: 3.5rem 0 2rem;
+    background: #fff;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+  }
+
+  .intro-inner {
+    max-width: 780px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 1.15rem;
+    color: #555;
+    line-height: 1.8;
+    border-left: 4px solid #009FE3;
+    padding-left: 1.25rem;
+    text-align: left;
+  }
+
+  /* Brands Grid */
+  .brands-grid-section {
+    padding: 4rem 0 6rem;
+    background: #f9fafb;
+  }
+
+  .brands-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .brand-card {
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.07);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 110px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .brand-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,159,227,0.12);
+    border-color: rgba(0,159,227,0.2);
+  }
+
+  .brand-card img {
+    max-height: 70px;
+    max-width: 140px;
+    width: 100%;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    filter: grayscale(20%);
+    transition: filter 0.25s ease;
+  }
+
+  .brand-card:hover img {
+    filter: grayscale(0%);
+  }
+
+  @media (max-width: 576px) {
+    .brands-grid {
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+  }
+</style>
