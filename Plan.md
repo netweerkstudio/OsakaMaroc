@@ -125,3 +125,6 @@ Logo:
 [x] create standard privacy policy page in french
 [x] create standard terms of use page in french
 [x] use favicon i added to public folder
+[x] create transmission page inside nos-produits folder and add the content from /content/nos-produits/transmission.md
+[x] try to make the items as 3 items per row in transmission page
+[x] add our brands component in transimission page

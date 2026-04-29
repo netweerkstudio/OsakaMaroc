@@ -1,0 +1,276 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Brands from '../../components/Brands.astro';
+
+const products = [
+  {
+    title: "Accouplements",
+    image: "/images/transmission/acoplamientos-royse-rodamientos-servicios-suministro-industrial-transmision-potencia-distribucion.webp",
+    content: `Un accouplement est un élément mécanique qui relie différents arbres ou prolonge la ligne de transmission d'un arbre. Ces arbres peuvent être parallèles ou situés dans des plans différents. Son rôle est de transmettre de la puissance.
+    <br><br>
+    Le but des accouplements est de protéger le système contre les charges excessives qui usent les composants du système, affectent les performances et perturbent les cycles de travail, de sorte que le bon fonctionnement des accouplements assure également la sécurité et la fiabilité de l'exploitation.`
+  },
+  {
+    title: "Réparation des bagues",
+    image: "/images/transmission/casquillos-de-fijacion-rodamientos-servicios-suministro-industrial-potencia-distribucion-industrial.webp",
+    content: `Les bagues réduisent le frottement qui se produit lorsque deux surfaces en contact direct glissent l'une contre l'autre. Elles sont spécialement conçues pour faciliter le montage des pignons du tendeur.
+    <br><br>
+    Ces bagues ressemblent aux tubes fins couramment utilisés dans les machines industrielles à arbres rotatifs ou coulissants pour améliorer le rendement et réduire le bruit et les vibrations. Elles peuvent également servir dans les forets pour les opérations de perçage, ainsi que dans les pompes à engrenages externes et les moteurs hydrauliques. Elles sont très répandues dans l'industrie automobile.
+    <br><br>
+    Les bagues de blocage sont un type d'unité utilisé pour aligner les poulies, les pignons, les accouplements, etc., afin de fixer ces éléments de transmission à leur arbre.`
+  },
+  {
+    title: "Disques et pignons",
+    image: "/images/transmission/discos-pinones-transmision-potencia-royse-rodamientos-servicios-suministro-industrial-distribucion.webp",
+    content: `Les pignons industriels sont des composants dentés utilisés dans le secteur industriel. Leur profil est constitué de petites dents métalliques qui permettent le mouvement des chaînes dentées. Sur de nombreuses machines, ils représentent le plus petit engrenage d'une chaîne de transmission. Les pignons transmettent la force d'un élément à un autre par courroie ou chaîne, et leur fonction principale est de faciliter les opérations de levage de charges lourdes, car ils constituent un élément fondamental de ce mécanisme.`
+  },
+  {
+    title: "Poulies",
+    image: "/images/transmission/poleas-transmision-potencia-royse-rodamientos-servicios-suministro-industrial-distribucion.webp",
+    content: `Les poulies industrielles sont des machines dont la fonction principale est d'assister les personnes dans des tâches physiques telles que le levage ou le transport d'objets lourds. Toutes les poulies sont munies d'une roue fixée sur leur circonférence.
+    <br><br>
+    Une poulie est un système mécanique simple fonctionnant par traction. Elle transmet la force et facilite le déplacement d'objets lourds. Elle se compose d'une roue fixée à un axe autour duquel tourne une corde. La force est ainsi répartie sur la circonférence de la roue, ce qui permet de déplacer l'objet plus facilement.
+    <br><br>
+    Il s'agit généralement d'un composant de base constitué d'une roue présentant une petite rainure sur sa surface extérieure afin d'empêcher la corde de glisser. Cette roue peut être en plastique ou en métal, selon la force requise.
+    <br><br>
+    Cette roue est fixée à un axe métallique qui lui permet de tourner, et cet axe est lui-même fixé à une structure reliée à un élément rigide qui lui permet de fonctionner.
+    <br><br>
+    Les poulies ont de nombreuses applications, car elles sont utilisées dans des systèmes mécaniques complexes. En résumé, la fonction d'une poulie est de servir de point d'appui à une corde qui supporte une charge ou une résistance à une extrémité, tandis qu'une force est appliquée à l'autre extrémité.`
+  },
+  {
+    title: "Anneaux pivotants",
+    image: "/images/transmission/corona-giratoria-transmision-de-potencia-rodamientos-servicios-suministro-industrial-distribucion.webp",
+    content: `Les bagues de rotation ou d'orientation sont nécessaires lorsque, à l'intérieur d'une machine, une pièce structurelle doit pivoter par rapport à une autre pièce sur un seul axe, garantissant ainsi la liaison entre ces pièces.
+    <br><br>
+    La couronne d'orientation est utilisée sur les machines dont la cabine pivote par rapport au châssis inférieur pour permettre les opérations de travail, comme les pelles hydrauliques. Soumise à des contraintes cycliques de haute fréquence, aux moments de basculement générés par le bras en porte-à-faux et à d'importantes charges axiales et radiales, elle nécessite une attention particulière afin de prévenir toute usure prématurée.
+    <br><br>
+    Ces éléments mécaniques résistent à des charges élevées, ont une grande variété d'applications et sont très économiques.
+    <br><br>
+    L'anneau pivotant se compose de quatre éléments principaux :
+    <ul class="product-list">
+      <li>Anneau denté inférieur</li>
+      <li>Anneau supérieur</li>
+      <li>Élément de roulement (une ou deux bandes à billes ou à rouleaux)</li>
+      <li>Séparateurs</li>
+    </ul>`
+  },
+  {
+    title: "Broches",
+    image: "/images/transmission/husillo-transmision-potencia-royse-rodamietos-servicios-suministro-industrial-distribucion.webp",
+    content: `Une broche est un type de vis longue de différents diamètres utilisée pour entraîner des éléments de serrage tels que des presses, ainsi que pour produire le déplacement linéaire des différents chariots des fraiseuses et des tours, ou dans les vannes hydrauliques.
+    <br><br>
+    La vis est un élément fondamental d'une machine de moulage par injection plastique. Il s'agit d'un enroulement hélicoïdal en acier dont la conception est cruciale pour les performances et la qualité ultérieures de la machine de moulage par injection, ainsi que pour la plastification, l'homogénéisation et la transformation du polymère.`
+  }
+];
+---
+
+<Layout 
+  title="Transmission | Osaka Solutions Maroc"
+  description="Découvrez nos produits de transmission de puissance (accouplements, poulies, pignons...)"
+>
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1>Transmission</h1>
+      <p class="breadcrumb">
+        <a href="/">Accueil</a> <span>/</span> 
+        <a href="/nos-produits">Nos Produits</a> <span>/</span> 
+        Transmission
+      </p>
+    </div> 
+  </section>
+
+  <!-- Products Content -->
+  <section class="products-detail-page">
+    <div class="container">
+      <div class="intro-text">
+        <p class="lead">Notre gamme de produits de transmission est conçue pour optimiser le transfert de puissance dans vos systèmes industriels en garantissant robustesse, fiabilité et performance.</p>
+      </div>
+
+      <div class="product-grid">
+        {products.map((item) => (
+          <div class="product-card">
+            <div class="product-image">
+              <img src={item.image} alt={item.title} loading="lazy" />
+            </div>
+            <div class="product-info">
+              <h2>{item.title}</h2>
+              <div class="product-desc" set:html={item.content} />
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <Brands />
+</Layout>
+
+<style>
+  /* Hero */
+  .page-hero {
+    position: relative;
+    height: 280px;
+    background: url('/images/transmission/poleas-transmision-potencia-royse-rodamientos-servicios-suministro-industrial-distribucion.webp') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    background-position: center 30%;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 10, 12, 0.7);
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+  }
+
+  .breadcrumb {
+    color: rgba(255,255,255,0.7);
+    font-size: 0.95rem;
+  }
+
+  .breadcrumb a {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    transition: color 0.2s;
+    font-weight: 500;
+  }
+
+  .breadcrumb a:hover {
+    color: #009FE3;
+  }
+
+  .breadcrumb span {
+    margin: 0 0.4rem;
+  }
+
+  /* Page Content */
+  .products-detail-page {
+    padding: 5rem 0;
+    background: #ffffff;
+  }
+
+  .intro-text {
+    max-width: 800px;
+    margin: 0 auto 4rem auto;
+    text-align: center;
+  }
+
+  .lead {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    border-color: rgba(0, 159, 227, 0.2);
+  }
+
+  .product-image {
+    width: 100%;
+    position: relative;
+    background: #f9f9f9;
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+  }
+
+  .product-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    aspect-ratio: 4/3;
+    padding: 1.5rem;
+    transition: transform 0.5s ease;
+  }
+
+  .product-card:hover .product-image img {
+    transform: scale(1.05);
+  }
+  
+  .product-info {
+    padding: 1.75rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-info h2 {
+    font-size: 1.4rem;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    position: relative;
+    padding-bottom: 10px;
+  }
+
+  .product-info h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: #009FE3;
+    border-radius: 2px;
+  }
+
+  .product-desc {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  :global(.product-list) {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+  }
+
+  :global(.product-list li) {
+    margin-bottom: 0.5rem;
+    position: relative;
+  }
+
+  @media (max-width: 1024px) {
+    .product-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .product-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
