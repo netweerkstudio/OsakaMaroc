@@ -135,3 +135,45 @@ Logo:
 [x] nos produit link in sidebar is clickable and it doesn't open the dropdown menu
 [x] dropdown links are not clickable
 [x] fix navbar in desktop version is not orginised 
+[x] make navbar in tablet responsive as well
+[x] analyse the site and create most important tasks we should do for SEO
+
+## SEO Tasks
+[x] Add `site` URL constraint to `astro.config.mjs`
+[x] Integrate `@astrojs/sitemap` to auto-generate `sitemap.xml`
+[x] Create a `public/robots.txt` file pointing to the sitemap
+[x] Add comprehensive OpenGraph (OG) and Twitter Card meta tags to `src/layouts/Layout.astro`
+[x] Add dynamic `<link rel="canonical">` to the head of `Layout.astro`
+[x] Verify all core site imagery has descriptive `alt` tags
+[x] Add structured Schema.org markup (JSON-LD) for LocalBusiness to the homepage
+[x] the domain name is osakasolutions.ma not osakasolutions.com
+[x] for now make site not indexable by search engines
+[x] add open graph to other pages
+[x] use the following key words in approiate place 
+    - Fournitures et Materiel Industriels Tanger
+    - Equipements Industriels Tanger
+    - Solutions Industriel Tanger
+[x] other keywords to use in other pages:
+    - Approvisionnement Equipements Industriels Tanger
+    - Solutions techniques Tanger
+    - Distributeur solutions industriels Tanger
+    - Fournisseur du matériel industriel Tanger
+    - Equipements Pneumatique Industriels Tanger
+    - Système Hydraulique Industriels Tanger
+    - Automatisme Industriels Tanger
+    - Matériels de Transmission Tanger
+    - Pompes Industriels Tanger
+    - Instrumentation et Process Industriels Tanger
+    - Fournitures et Outillages Tanger
+    - Equipements de Protection Individuelle Tanger
+[x] create pages with following slugs for SEO and use some content in it like other pages
+    - Equipements Industriels Tanger
+    - Materiel Industriels Tanger
+    - Solutions Industriels Tanger
+[x] make site indexable by AI
+[x] make site not indexable by AI for now
+[x] create file for AI like robots.txt but this one for AI crawlers (called llm.txt if i am not wrong)
+[x] create sitemap.xml file for AI crawlers
+[x] update seo pages content to be more rich and use the keywords in approiate place and not duplicated components like Hero and About and Sectors
+[x] update the title and description to include city name 'Tanger' of the pages to be more SEO friendly
+[x] 

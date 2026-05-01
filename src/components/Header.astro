@@ -282,7 +282,7 @@
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     .header-contact, /* Desktop contact */
     .nav-wrapper .nav {
       /* Keep .nav inside wrapper, but we resytyle .nav-wrapper below */
@@ -427,7 +427,7 @@
     dropdownToggles.forEach(toggle => {
       const toggleLink = toggle.querySelector('.dropdown-toggle');
       toggleLink?.addEventListener('click', (e) => {
-        if (window.innerWidth <= 768) {
+        if (window.innerWidth <= 1024) {
           // Prevent navigation on mobile so it just acts as an accordion
           e.preventDefault();
           toggle.classList.toggle('active');

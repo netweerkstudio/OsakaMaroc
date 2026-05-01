@@ -9,7 +9,33 @@ import References from '../components/References.astro';
 import Contact from '../components/Contact.astro';
 ---
 
-<Layout title="Osaka Maroc | Accueil">
+<Layout 
+  title="Osaka Maroc | Fournitures et Materiel Industriels Tanger"
+  description="Osaka Solutions Maroc, votre partenaire de confiance pour les Fournitures et Materiel Industriels Tanger, et leader en Equipements Industriels Tanger et Solutions Industriel Tanger."
+>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Osaka Solutions Maroc",
+      "image": "https://www.osakasolutions.ma/images/OsakaLogo.png",
+      "@id": "https://www.osakasolutions.ma",
+      "url": "https://www.osakasolutions.ma",
+      "telephone": "+212 5 39 94 37 68",
+      "email": "contact@osakamaroc.ma",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "N°04, LOT, RUE OUED MHARHAR",
+        "addressLocality": "Tanger",
+        "addressCountry": "MA"
+      },
+      "sameAs": [
+        "https://www.facebook.com/osakasolutionsmaroc",
+        "https://www.instagram.com/osakasolutionsmaroc/",
+        "https://www.linkedin.com/in/hamza-hassouni-392b4556/"
+      ]
+    }
+  </script>
   <Hero />
   <Products />
   <Brands />

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+
+Sitemap: https://www.osakasolutions.ma/sitemap-index.xml

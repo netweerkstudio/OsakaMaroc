@@ -1,0 +1,12 @@
+# Osaka Solutions Maroc
+> Fourniture et Matériel Industriels à Tanger
+
+Osaka Solutions Maroc accompagne les professionnels et les industries de la région de Tanger-Tétouan pour tous leurs besoins d'approvisionnement en équipements industriels, pneumatique, hydraulique, automatisme, pompes, et outillages.
+
+## Coordonnées
+- **Site Web:** https://www.osakasolutions.ma
+- **Contact:** contact@osakamaroc.ma | +212 5 39 94 37 68
+- **Adresse:** N°04, LOT, RUE OUED MHARHAR, Tanger, MA
+
+## Plan du Site (Sitemaps)
+- [Index Sitemap XML](https://www.osakasolutions.ma/sitemap-index.xml)
