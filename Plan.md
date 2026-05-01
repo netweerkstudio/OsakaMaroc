@@ -128,3 +128,10 @@ Logo:
 [x] create transmission page inside nos-produits folder and add the content from /content/nos-produits/transmission.md
 [x] try to make the items as 3 items per row in transmission page
 [x] add our brands component in transimission page
+[x] fix navbar in mobile version because the logo is so big
+[x] create sidebar for mobile and toggle icon in mobile navbar
+[x] add social media icons in mobile sidebar
+[x] add phone number in mobile sidebar
+[x] nos produit link in sidebar is clickable and it doesn't open the dropdown menu
+[x] dropdown links are not clickable
+[x] fix navbar in desktop version is not orginised 
