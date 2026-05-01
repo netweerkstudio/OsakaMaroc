@@ -47,8 +47,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ::selection {
-  background: var(--accent-primary);
-  color: #fff;
+  background: rgba(0, 159, 227, 0.25);
+  color: inherit;
 }
 
 /* Utilities */

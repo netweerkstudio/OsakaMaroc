@@ -37,6 +37,16 @@
       </ul>
     </div>
 
+    <!-- SEO links -->
+    <div class="link-group">
+      <h3>Notre Expertise</h3>
+      <ul>
+        <li><a href="/equipements-industriels-tanger">Equipements Industriels</a></li>
+        <li><a href="/materiel-industriels-tanger">Matériel Industriel</a></li>
+        <li><a href="/solutions-industriels-tanger">Solutions Industrielles</a></li>
+      </ul>
+    </div>
+
     <!-- Address & Contact -->
     <div class="link-group">
       <h3>Contact</h3>
@@ -68,7 +78,10 @@
 
   <div class="footer-bottom">
     <div class="container footer-bottom-content">
-      <p>&copy; {new Date().getFullYear()} Osaka Solutions Maroc. Tous droits réservés.</p>
+      <div class="copyright-group">
+        <p>&copy; {new Date().getFullYear()} Osaka Solutions Maroc. Tous droits réservés.</p>
+        <p class="developer-credit">Développé par <a href="https://netweerk.studio" target="_blank" rel="noopener">netweerk.studio</a></p>
+      </div>
       <div class="legal-links">
         <a href="/politique-de-confidentialite">Politique de Confidentialité</a>
         <a href="/conditions-d-utilisation">Conditions d'Utilisation</a>
@@ -87,8 +100,8 @@
 
   .footer-content {
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1.5fr;
-    gap: 3rem;
+    grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+    gap: 2rem;
     padding-bottom: 3rem;
     border-bottom: 1px solid rgba(0,0,0,0.08);
   }
@@ -206,6 +219,29 @@
 
   .legal-links a:hover {
     color: #009FE3;
+  }
+
+  .copyright-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .developer-credit {
+    font-size: 0.75rem; 
+    color: inherit; 
+  }
+
+  .developer-credit a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: rgba(170, 170, 170, 0.4);
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
+  }
+
+  .developer-credit a:hover {
+    color: #009FE3;
+    text-decoration-color: #009FE3;
   }
 
   @media (max-width: 900px) {

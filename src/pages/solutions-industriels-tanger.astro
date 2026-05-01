@@ -1,13 +1,18 @@
 ---
+import '../styles/seo-pages.css';
 import Layout from '../layouts/Layout.astro';
+import Brands from '../components/Brands.astro';
+import References from '../components/References.astro';
+import Contact from '../components/Contact.astro';
 ---
 
 <Layout 
   title="Solutions Industriel Tanger | Osaka Solutions Maroc" 
   description="Osaka Solutions Maroc : Leader en Solutions Industriel Tanger. Spécialistes des solutions techniques Tanger, comprenant automatisme industriels Tanger, matériels de transmission Tanger, pompes industriels Tanger et instrumentation et process industriels Tanger."
 >
-  <div class="seo-page-container container">
-    <header class="seo-header">
+  <section class="seo-page-wrapper">
+    <div class="seo-page-container container">
+      <header class="seo-header">
       <h1>Solutions Industriel Tanger</h1>
       <p class="breadcrumbs"><a href="/">Accueil</a> / Solutions Industriel</p>
     </header>
@@ -35,20 +40,10 @@ import Layout from '../layouts/Layout.astro';
         Pour maîtriser entièrement vos variables de production, l'<strong>Instrumentation et Process Industriels Tanger</strong> que nous distribuons vous permet de capter, d'analyser et d'ajuster finement vos rendements en temps réel et en toute sécurité. Faites confiance à un véritable expert, garant de <strong>Solutions Industriel Tanger</strong> performantes.
       </p>
     </article>
-  </div>
-</Layout>
+    </div>
+  </section>
 
-<style>
-  .seo-page-container { margin-top: 100px; padding: 4rem 1.5rem; min-height: 60vh; }
-  .seo-header { text-align: center; margin-bottom: 3rem; }
-  .seo-header h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
-  .breadcrumbs { color: #888; font-size: 0.9rem; }
-  .breadcrumbs a { color: #009FE3; text-decoration: none; }
-  .seo-content { font-size: 1.1rem; color: #555; line-height: 1.8; max-width: 900px; margin: 0 auto; }
-  .seo-content h2 { font-size: 1.8rem; color: #222; margin: 2rem 0 1rem; border-left: 4px solid #009FE3; padding-left: 1rem; }
-  .seo-content p { margin-bottom: 1.5rem; }
-  .seo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2rem 0; }
-  .seo-card { background: #f9f9f9; padding: 2rem; border-radius: 8px; border: 1px solid #eee; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
-  .seo-card h3 { color: #009FE3; margin-bottom: 1rem; font-size: 1.3rem; }
-  @media (max-width: 768px) { .seo-grid { grid-template-columns: 1fr; } }
-</style>
+  <Brands />
+  <References />
+  <Contact />
+</Layout>

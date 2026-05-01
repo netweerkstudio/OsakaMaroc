@@ -42,5 +42,57 @@ import Contact from '../components/Contact.astro';
   <About />
   <Sectors />
   <References />
+  
+  <section class="seo-links">
+    <div class="container">
+      <h3>Notre Expertise à Tanger</h3>
+      <div class="seo-links-grid">
+        <a href="/equipements-industriels-tanger">Equipements Industriels</a>
+        <a href="/materiel-industriels-tanger">Matériel Industriel</a>
+        <a href="/solutions-industriels-tanger">Solutions Industrielles</a>
+      </div>
+    </div>
+  </section>
+
   <Contact />
 </Layout>
+
+<style>
+  .seo-links {
+    padding: 4rem 0;
+    background: #fdfdfd;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    text-align: center;
+  }
+  .seo-links h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+    font-weight: 700;
+  }
+  .seo-links-grid {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .seo-links-grid a {
+    padding: 0.75rem 1.5rem;
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: 50px;
+    color: #666;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+  }
+  .seo-links-grid a:hover {
+    background: #009FE3;
+    color: #ffffff;
+    border-color: #009FE3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 159, 227, 0.2);
+  }
+</style>

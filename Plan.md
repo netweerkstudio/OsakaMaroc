@@ -176,4 +176,11 @@ Logo:
 [x] create sitemap.xml file for AI crawlers
 [x] update seo pages content to be more rich and use the keywords in approiate place and not duplicated components like Hero and About and Sectors
 [x] update the title and description to include city name 'Tanger' of the pages to be more SEO friendly
-[x] 
+[x] include SEO pages links somewhere in the site so they are indexed by search engines
+[x] add developed by netweerk.studio so this website works as a fallback and make its color same like footer color and make it small
+[x] remove Notre Expertise from footer and take it some where else
+[x] update the selection of text to be as light primary color and not red color
+[x] update seo pages background to white and add the following components to each page:
+    - <Brands />
+    - <References />
+    - <Contact />

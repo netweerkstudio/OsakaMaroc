@@ -1,13 +1,18 @@
 ---
+import '../styles/seo-pages.css';
 import Layout from '../layouts/Layout.astro';
+import Brands from '../components/Brands.astro';
+import References from '../components/References.astro';
+import Contact from '../components/Contact.astro';
 ---
 
 <Layout 
   title="Fournitures et Materiel Industriels Tanger | Osaka Solutions Maroc" 
   description="Osaka Solutions Maroc: Fournitures et Materiel Industriels Tanger. Retrouvez notre automatisme industriels Tanger, matériels de transmission Tanger, pompes industriels Tanger, fournitures et outillages Tanger, et equipements de protection individuelle Tanger."
 >
-  <div class="seo-page-container container">
-    <header class="seo-header">
+  <section class="seo-page-wrapper">
+    <div class="seo-page-container container">
+      <header class="seo-header">
       <h1>Fournitures et Materiel Industriels Tanger</h1>
       <p class="breadcrumbs"><a href="/">Accueil</a> / Matériel Industriel</p>
     </header>
@@ -32,17 +37,10 @@ import Layout from '../layouts/Layout.astro';
       </div>
       
     </article>
-  </div>
-</Layout>
+    </div>
+  </section>
 
-<style>
-  .seo-page-container { margin-top: 100px; padding: 4rem 1.5rem; min-height: 60vh; }
-  .seo-header { text-align: center; margin-bottom: 3rem; }
-  .seo-header h1 { font-size: 2.5rem; color: #333; margin-bottom: 1rem; }
-  .breadcrumbs { color: #888; font-size: 0.9rem; }
-  .breadcrumbs a { color: #009FE3; text-decoration: none; }
-  .seo-content { font-size: 1.1rem; color: #555; line-height: 1.8; max-width: 900px; margin: 0 auto; }
-  .seo-content h2 { font-size: 1.8rem; color: #222; margin: 2rem 0 1rem; border-left: 4px solid #009FE3; padding-left: 1rem; }
-  .seo-content p { margin-bottom: 1.5rem; }
-  .alert-box { margin-top: 2rem; padding: 1.5rem; border-left: 4px solid #009FE3; background: #f0faff; border-radius: 4px; }
-</style>
+  <Brands />
+  <References />
+  <Contact />
+</Layout>
